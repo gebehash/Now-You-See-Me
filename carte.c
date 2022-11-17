@@ -5,40 +5,34 @@ typedef struct Node {
     char simbol;
 }Node;
 
-Node* createNode(short val, char simbol) {
+Node* createCard(short val, char simbol) {
     Node* node = malloc(sizeof(Node));
     node->prev = 0;
     node->next = 0;
     node->val = val;
     node->simbol = simbol;
- 
+    //printf("Node %d: %p\n", node->val, node);
     return node;
 }
 
 void deleteCard(Node* node) {
-    printf("%d", node->val);
+    //printf("deleted %d: %p\n", node->val, node);
     if (node->prev != NULL && node->next != NULL) {
         node->prev->next = node->next;
         node->next->prev = node->prev;
+    } else {
+        printf("Error: deleteCard\n");
     }
-    
-    if (node->prev != NULL && node->next == NULL)
-        node->prev->next = 0;
-        
-    //if (node->prev == NULL && node->next != NULL)
-        
-
     free(node);
 }
 
 void removeCardAtPos(Node* node, int index) {
-    if (index == 0) {
+    if (index == 0)
         deleteCard(node);
-    } else {
+    else
         removeCardAtPos(node->next, index - 1);
-    }
 }
 
 void printCard(Node* node) {
-    printf("%d : %c", node->val, node->simbol);
+    printf("%d%c", node->val, node->simbol);
 }

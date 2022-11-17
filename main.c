@@ -1,26 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "pachet.c"
 
 int main() {
-    Pachet* p1 = malloc(sizeof(Pachet));
-    addCard(5, 'h', p1);
-    // printCard(p1->head);
-    // printf("\n");
-    // printCard(p1->tail);
-    // printf("\n");
-    addCard(7, 'c', p1);
-    // printCard(p1->tail);
-    // printf("\n");
-    addCard(2, 'd', p1);
-    removeCard(p1, 0);
-    removeCard(p1, 0);
-    removeCard(p1, 0);
+    void *vector = malloc(1);
+    int total_size = 0;
+    int index = 0;
 
-    printPachet(p1);
+    char* buffer = (char*) malloc(50);
+    fgets(buffer, 50, stdin);
+
+    while (strstr(buffer, "EXIT") == 0) {
+        char* command = strtok(buffer, " ");
+
+        if (strstr(command, "ADD_DECK") == 0) {
+            int number = atoi(strtok(NULL, " "));
+            total_size += 8;
+            vector = realloc(vector, total_size);
+            vector[index * 8] = 0;
+        }
+    }
 
 
-
-
+    free(buffer);
     return 0;
 }
