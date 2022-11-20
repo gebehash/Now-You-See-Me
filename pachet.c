@@ -3,7 +3,7 @@
 typedef struct Pachet {
     Node* head;
     Node* tail;
-    short size;
+    int size;
 }Pachet;
 
 Pachet* createPachet() {
@@ -14,7 +14,7 @@ Pachet* createPachet() {
     return p;
 }
 
-void addCard(/*short val, char simbol*/Node* node, Pachet* pachet) {
+void addCard(/*int val, char simbol*/Node* node, Pachet* pachet) {
     // Node *node = createCard(val,simbol);
 
     if (pachet->head != 0) {

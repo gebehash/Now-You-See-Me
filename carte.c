@@ -1,11 +1,11 @@
 typedef struct Node {
     struct Node* prev;
     struct Node* next;
-    short val;
+    int val;
     char simbol;
 }Node;
 
-Node* createCard(short val, char simbol) {
+Node* createCard(int val, char simbol) {
     Node* node = malloc(sizeof(Node));
     node->prev = 0;
     node->next = 0;
