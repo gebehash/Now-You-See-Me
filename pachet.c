@@ -14,8 +14,8 @@ Pachet* createPachet() {
     return p;
 }
 
-void addCard(short val, char simbol, Pachet* pachet) {
-    Node *node = createCard(val,simbol);
+void addCard(/*short val, char simbol*/Node* node, Pachet* pachet) {
+    // Node *node = createCard(val,simbol);
 
     if (pachet->head != 0) {
         pachet->tail->next = node;
