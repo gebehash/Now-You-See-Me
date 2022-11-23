@@ -31,7 +31,9 @@ void addCard(/*int val, char simbol*/Node* node, Pachet* pachet) {
 
 void removeCard(Pachet* pachet, int index) {
     //printf("Removing card %d\n", pachet->head->val);
-    if (pachet->size == 0 || pachet->size <= index)
+    if (pachet->size == 0)
+        free(pachet);
+    if (pachet->size <= index)
         return;
     if (index == 0) {
         Node *aux = pachet->head;

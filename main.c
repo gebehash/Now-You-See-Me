@@ -46,6 +46,23 @@ int main() {
             printf("The deck was successfully created with %d cards.\n", number);
         }
 
+        if (strstr(command, "DEL_DECK")) {
+            int number = atoi(strtok(NULL, " \n"));
+            deletePachet(vector + (number * SIZEOF_PACHET));
+            total_size -= SIZEOF_PACHET;
+            vector = realloc(vector, total_size);
+
+            printf("The deck %d was successfully deleted.\n", number);
+        }
+
+        if (strstr(command, "DEL_CARD")) {
+            int index_deck = atoi(strtok(NULL, " \n"));
+            int index_card = atoi(strtok(NULL, " \n"));
+            removeCard(vector + (index_deck * SIZEOF_PACHET), index_card);
+
+            printf("The card was successfully deleted from deck %d.\n", index_deck);
+        }
+
         fgets(buffer, 50, stdin);
         command = strtok(buffer, " \n");
     }
