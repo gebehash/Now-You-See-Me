@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "pachet.c"
-#define SIZEOF_PACHET 8
+#define SIZEOF_PACHET 12
 
 char getSymbol(char* string) {
     if (strstr(string, "HEART")) {
@@ -17,12 +17,12 @@ char getSymbol(char* string) {
 }
 
 int main() {
-    void *vector = malloc(1);
     int total_size = 0;
+    void *vector = malloc(total_size);
     int index = 0;
 
     char* buffer = (char*) malloc(50);
-    
+
     fgets(buffer, 50, stdin);
     char* command = strtok(buffer, " \n");
 
@@ -48,7 +48,7 @@ int main() {
 
         if (strstr(command, "DEL_DECK")) {
             int number = atoi(strtok(NULL, " \n"));
-            deletePachet(vector + (number * SIZEOF_PACHET));
+            deletePachet(vector + number * SIZEOF_PACHET);
             total_size -= SIZEOF_PACHET;
             vector = realloc(vector, total_size);
 
@@ -63,6 +63,18 @@ int main() {
             printf("The card was successfully deleted from deck %d.\n", index_deck);
         }
 
+        if (strstr(command, "ADD_CARDS")) {
+            int index_deck = atoi(strtok(NULL, " \n"));
+            int number = atoi(strtok(NULL, " \n"));
+
+            for (int i = 0; i < number; i++) {
+                fgets(buffer, 50, stdin);
+                int n = atoi(strtok(buffer, " \n"));
+                char s = getSymbol(strtok(NULL, " \n"));
+                addCard(createCard(n, s), vector + (index_deck * SIZEOF_PACHET));
+            }
+        }
+ 
         fgets(buffer, 50, stdin);
         command = strtok(buffer, " \n");
     }

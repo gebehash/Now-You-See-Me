@@ -11,6 +11,7 @@ Pachet* createPachet() {
     p->head = 0;
     p->tail = 0;
     p->size = 0;
+    printf("%d", sizeof(Pachet));
     return p;
 }
 
@@ -27,12 +28,14 @@ void addCard(/*int val, char simbol*/Node* node, Pachet* pachet) {
     }
     //printf("Added card %d\n", val);
     pachet->size++;
+    // printf("pachetsize  %d\n", pachet->size);
 }
 
 void removeCard(Pachet* pachet, int index) {
     //printf("Removing card %d\n", pachet->head->val);
+    // printf("pachetsize  %d\n", pachet->size);
     if (pachet->size == 0)
-        free(pachet);
+        return;
     if (pachet->size <= index)
         return;
     if (index == 0) {
@@ -40,7 +43,7 @@ void removeCard(Pachet* pachet, int index) {
         if (pachet->size == 1) {
             pachet->tail = 0;
             pachet->head = 0;
-        } else{
+        } else {
             pachet->head = pachet->head->next;
             pachet->head->prev = 0;
         }
