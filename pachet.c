@@ -15,6 +15,10 @@ Pachet* createPachet() {
     return p;
 }
 
+int getSize(Pachet* p) {
+    return p->size;
+}
+
 void addCard(/*int val, char simbol*/Node* node, Pachet* pachet) {
     // Node *node = createCard(val,simbol);
 

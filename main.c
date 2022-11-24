@@ -73,7 +73,19 @@ int main() {
                 char s = getSymbol(strtok(NULL, " \n"));
                 addCard(createCard(n, s), vector + (index_deck * SIZEOF_PACHET));
             }
+
+            printf("The cards were successfully added to deck %d.\n", index_deck);
         }
+
+        if (strstr(command, "DECK_NUMBER")) {
+            printf("The number of decks is %d.\n", total_size / SIZEOF_PACHET);   
+        }
+
+        if (strstr(command, "DECK_LEN")) {
+            int index_deck = atoi(strtok(NULL, " \n"));
+            printf("The length of deck %d is %d.\n", index_deck, getSize(vector + index_deck * SIZEOF_PACHET));
+        }
+
  
         fgets(buffer, 50, stdin);
         command = strtok(buffer, " \n");
