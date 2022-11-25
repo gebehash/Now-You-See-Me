@@ -6,12 +6,13 @@ typedef struct Pachet {
     int size;
 }Pachet;
 
+
 Pachet* createPachet() {
     Pachet* p = malloc(sizeof(Pachet));
     p->head = 0;
     p->tail = 0;
     p->size = 0;
-    printf("%d", sizeof(Pachet));
+    // printf("%d", sizeof(Pachet));
     return p;
 }
 
@@ -60,14 +61,14 @@ void removeCard(Pachet* pachet, int index) {
 void deletePachet(Pachet* pachet) {
     while (pachet->size)
         removeCard(pachet, 0);
-    free(pachet);
+    // free(pachet);
 }
 
 void printPachetReal(Node* head) {
     if (head == 0)
         return;
     printCard(head);
-    printf("\t");
+    // printf("\t");
     printPachetReal(head->next);
 }
 

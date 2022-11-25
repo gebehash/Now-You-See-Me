@@ -15,6 +15,30 @@ Node* createCard(int val, char simbol) {
     return node;
 }
 
+char getSymbol(char* string) {
+    if (strstr(string, "HEART")) {
+        return 'h';
+    } else if (strstr(string, "CLUB")) {
+        return 'c';
+    } else if (strstr(string, "DIAMOND")) {
+        return 'd';
+    } else if (strstr(string, "SPADE")) {
+        return 's';
+    }
+}
+
+char* getSymbol2(char c) {
+    if (c == 'h') {
+        return "HEART";
+    } else if (c =='c') {
+        return "CLUB";
+    } else if (c == 'd') {
+        return "DIAMOND";
+    } else if (c=='s') {
+        return "SPADE";
+    }
+}
+
 void deleteCard(Node* node) {
     //printf("deleted %d: %p\n", node->val, node);
     if (node->prev != NULL && node->next != NULL) {
@@ -34,5 +58,5 @@ void removeCardAtPos(Node* node, int index) {
 }
 
 void printCard(Node* node) {
-    printf("%d%c", node->val, node->simbol);
+    printf("\t%d %s\n", node->val, getSymbol2(node->simbol));
 }

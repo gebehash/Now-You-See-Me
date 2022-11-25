@@ -2,26 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 #include "pachet.c"
-#define SIZEOF_PACHET 12
-
-char getSymbol(char* string) {
-    if (strstr(string, "HEART")) {
-        return 'h';
-    } else if (strstr(string, "CLUB")) {
-        return 'c';
-    } else if (strstr(string, "DIAMOND")) {
-        return 'd';
-    } else if (strstr(string, "SPADE")) {
-        return 's';
-    }
-}
 
 int main() {
     int total_size = 0;
     void *vector = malloc(total_size);
     int index = 0;
+    int SIZEOF_PACHET = sizeof(Pachet);
 
     char* buffer = (char*) malloc(50);
+    printf("%d", sizeof(void*));
 
     fgets(buffer, 50, stdin);
     char* command = strtok(buffer, " \n");
@@ -50,6 +39,7 @@ int main() {
             int number = atoi(strtok(NULL, " \n"));
             deletePachet(vector + number * SIZEOF_PACHET);
             total_size -= SIZEOF_PACHET;
+            memcpy(vector + (number * SIZEOF_PACHET), vector + ((number + 1)* SIZEOF_PACHET), (total_size) - (SIZEOF_PACHET * number));
             vector = realloc(vector, total_size);
 
             printf("The deck %d was successfully deleted.\n", number);
@@ -84,6 +74,14 @@ int main() {
         if (strstr(command, "DECK_LEN")) {
             int index_deck = atoi(strtok(NULL, " \n"));
             printf("The length of deck %d is %d.\n", index_deck, getSize(vector + index_deck * SIZEOF_PACHET));
+        }
+
+        if (strstr(command, "SHOW_ALL")) {
+            for (int i = 0; i < total_size / SIZEOF_PACHET; i++) {
+                printf("Deck %d:\n", i);
+                printPachet(vector + i * SIZEOF_PACHET);
+                printf("\n");
+            }
         }
 
  
