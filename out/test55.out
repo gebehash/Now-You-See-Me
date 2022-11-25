@@ -1,0 +1,356 @@
+The deck was successfully created with 5 cards.
+The deck was successfully created with 7 cards.
+The deck was successfully created with 8 cards.
+Deck 0:
+	92 HEART
+	14 HEART
+	1 HEART
+	1 HEART
+	9 DIAMOND
+
+Deck 1:
+	4 SPADE
+	1 CLUB
+	13 HEART
+	3 HEART
+	1 CLUB
+	11 SPADE
+	2 DIAMOND
+
+Deck 2:
+	12 SPADE
+	2 CLUB
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+
+The number of decks is 3.
+The card was successfully deleted from deck 1.
+The cards were successfully added to deck 2.
+The number of decks is 3.
+The deck was successfully created with 3 cards.
+Deck 0:
+	92 HEART
+	14 HEART
+	1 HEART
+	1 HEART
+	9 DIAMOND
+
+Deck 1:
+	4 SPADE
+	1 CLUB
+	13 HEART
+	1 CLUB
+	11 SPADE
+	2 DIAMOND
+
+Deck 2:
+	12 SPADE
+	2 CLUB
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+
+Deck 3:
+	10 HEART
+	10 HEART
+	6 DIAMOND
+
+The length of deck 3 is 3.
+The cards were successfully added to deck 3.
+Deck 0:
+	92 HEART
+	14 HEART
+	1 HEART
+	1 HEART
+	9 DIAMOND
+
+Deck 1:
+	4 SPADE
+	1 CLUB
+	13 HEART
+	1 CLUB
+	11 SPADE
+	2 DIAMOND
+
+Deck 2:
+	12 SPADE
+	2 CLUB
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+
+Deck 3:
+	10 HEART
+	10 HEART
+	6 DIAMOND
+	10 CLUB
+	5 SPADE
+	11 HEART
+	13 SPADE
+
+The card was successfully deleted from deck 2.
+The card was successfully deleted from deck 0.
+Error: deleteCard
+The card was successfully deleted from deck 1.
+The length of deck 0 is 4.
+The deck 1 was successfully deleted.
+Deck 0:
+	92 HEART
+	14 HEART
+	1 HEART
+	9 DIAMOND
+
+Deck 1:
+	12 SPADE
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+
+Deck 2:
+	10 HEART
+	10 HEART
+	6 DIAMOND
+	10 CLUB
+	5 SPADE
+	11 HEART
+	13 SPADE
+
+The cards were successfully added to deck 2.
+Error: deleteCard
+The card was successfully deleted from deck 0.
+The card was successfully deleted from deck 3.
+Deck 0:
+	92 HEART
+	14 HEART
+	1 HEART
+	9 DIAMOND
+
+Deck 1:
+	12 SPADE
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+
+Deck 2:
+	10 HEART
+	10 HEART
+	6 DIAMOND
+	10 CLUB
+	5 SPADE
+	11 HEART
+	13 SPADE
+	9 SPADE
+	2 CLUB
+
+The card was successfully deleted from deck 0.
+Deck 0:
+	92 HEART
+	1 HEART
+	9 DIAMOND
+
+Deck 1:
+	12 SPADE
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+
+Deck 2:
+	10 HEART
+	10 HEART
+	6 DIAMOND
+	10 CLUB
+	5 SPADE
+	11 HEART
+	13 SPADE
+	9 SPADE
+	2 CLUB
+
+The cards were successfully added to deck 3.
+The number of decks is 3.
+Deck 0:
+	92 HEART
+	1 HEART
+	9 DIAMOND
+
+Deck 1:
+	12 SPADE
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+
+Deck 2:
+	10 HEART
+	10 HEART
+	6 DIAMOND
+	10 CLUB
+	5 SPADE
+	11 HEART
+	13 SPADE
+	9 SPADE
+	2 CLUB
+
+The deck 2 was successfully deleted.
+The deck was successfully created with 7 cards.
+Deck 0:
+	92 HEART
+	1 HEART
+	9 DIAMOND
+
+Deck 1:
+	12 SPADE
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 0:
+	92 HEART
+	1 HEART
+	9 DIAMOND
+
+Deck 1:
+	12 SPADE
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+
+Deck 2:
+Pachet gol
+
+The deck 2 was successfully deleted.
+The number of decks is 2.
+Deck 0:
+	92 HEART
+	1 HEART
+	9 DIAMOND
+
+Deck 1:
+	12 SPADE
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+
+The number of decks is 2.
+The cards were successfully added to deck 0.
+The length of deck 0 is 3.
+The length of deck 1 is 8.
+Deck 0:
+	92 HEART
+	1 HEART
+	9 DIAMOND
+	1 DIAMOND
+
+Deck 1:
+	12 SPADE
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+
+The length of deck 1 is 8.
+The card was successfully deleted from deck 2.
+Deck 0:
+	92 HEART
+	1 HEART
+	9 DIAMOND
+	1 DIAMOND
+
+Deck 1:
+	12 SPADE
+	9 SPADE
+	14 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+
+The length of deck 1 is 8.
+The length of deck 1 is 8.
+The cards were successfully added to deck 1.
+The card was successfully deleted from deck 1.
+Deck 0:
+	92 HEART
+	1 HEART
+	9 DIAMOND
+	1 DIAMOND
+
+Deck 1:
+	12 SPADE
+	9 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+	4 CLUB
+	6 CLUB
+	8 SPADE
+	4 SPADE
+
+Deck 0:
+	92 HEART
+	1 HEART
+	9 DIAMOND
+	1 DIAMOND
+
+Deck 1:
+	12 SPADE
+	9 SPADE
+	5 CLUB
+	7 DIAMOND
+	2 CLUB
+	11 CLUB
+	2 DIAMOND
+	4 CLUB
+	6 CLUB
+	8 SPADE
+	4 SPADE
+
+The card was successfully deleted from deck 2.
+The dec

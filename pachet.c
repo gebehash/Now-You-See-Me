@@ -1,5 +1,5 @@
 #include "carte.c"
-
+#pragma pack(1)
 typedef struct Pachet {
     Node* head;
     Node* tail;
@@ -37,10 +37,10 @@ void addCard(/*int val, char simbol*/Node* node, Pachet* pachet) {
 }
 
 void removeCard(Pachet* pachet, int index) {
-    //printf("Removing card %d\n", pachet->head->val);
-    // printf("pachetsize  %d\n", pachet->size);
-    if (pachet->size == 0)
+    if (pachet->size == 0) {
+        free(pachet);
         return;
+    }
     if (pachet->size <= index)
         return;
     if (index == 0) {
@@ -61,7 +61,7 @@ void removeCard(Pachet* pachet, int index) {
 void deletePachet(Pachet* pachet) {
     while (pachet->size)
         removeCard(pachet, 0);
-    // free(pachet);
+    //free(pachet);
 }
 
 void printPachetReal(Node* head) {

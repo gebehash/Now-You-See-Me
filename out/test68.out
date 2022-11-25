@@ -1,0 +1,411 @@
+The deck was successfully created with 5 cards.
+The deck was successfully created with 8 cards.
+The deck was successfully created with 6 cards.
+The cards were successfully added to deck 1.
+Deck 0:
+	5 HEART
+	35 DIAMOND
+	14 SPADE
+	1 DIAMOND
+	8 SPADE
+
+Deck 1:
+	11 HEART
+	8 DIAMOND
+	13 SPADE
+	3 CLUB
+	12 CLUB
+	13 HEART
+	3 HEART
+	7 HEART
+	14 HEART
+	11 HEART
+
+Deck 2:
+	6 CLUB
+	4 SPADE
+	5 DIAMOND
+	4 SPADE
+	4 SPADE
+	11 (null)
+
+The card was successfully deleted from deck 1.
+The deck was successfully created with 7 cards.
+Deck 0:
+	5 HEART
+	35 DIAMOND
+	14 SPADE
+	1 DIAMOND
+	8 SPADE
+
+Deck 1:
+	11 HEART
+	8 DIAMOND
+	13 SPADE
+	3 CLUB
+	12 CLUB
+	3 HEART
+	7 HEART
+	14 HEART
+	11 HEART
+
+Deck 2:
+	6 CLUB
+	4 SPADE
+	5 DIAMOND
+	4 SPADE
+	4 SPADE
+	11 (null)
+
+Deck 3:
+	80 DIAMOND
+	14 CLUB
+	9 CLUB
+	6 HEART
+	6 (null)
+	8 DIAMOND
+	13 CLUB
+
+The deck was successfully created with 5 cards.
+The cards were successfully added to deck 0.
+The deck was successfully created with 7 cards.
+The length of deck 2 is 6.
+The card was successfully deleted from deck 0.
+The cards were successfully added to deck 3.
+The deck was successfully created with 4 cards.
+Deck 0:
+	5 HEART
+	35 DIAMOND
+	14 SPADE
+	1 DIAMOND
+	8 SPADE
+	5 HEART
+	2 SPADE
+	5 SPADE
+
+Deck 1:
+	11 HEART
+	8 DIAMOND
+	13 SPADE
+	3 CLUB
+	12 CLUB
+	3 HEART
+	7 HEART
+	14 HEART
+	11 HEART
+
+Deck 2:
+	6 CLUB
+	4 SPADE
+	5 DIAMOND
+	4 SPADE
+	4 SPADE
+	11 (null)
+
+Deck 3:
+	80 DIAMOND
+	14 CLUB
+	9 CLUB
+	6 HEART
+	6 (null)
+	8 DIAMOND
+	13 CLUB
+	9 CLUB
+	13 SPADE
+	9 DIAMOND
+	4 DIAMOND
+
+Deck 4:
+	1 SPADE
+	7 CLUB
+	12 SPADE
+	4 DIAMOND
+	12 DIAMOND
+
+Deck 5:
+	98 DIAMOND
+	7 DIAMOND
+	14 HEART
+	10 SPADE
+	9 DIAMOND
+	1 CLUB
+	8 SPADE
+
+Deck 6:
+	10 DIAMOND
+	66 SPADE
+	1 HEART
+	12 CLUB
+
+The length of deck 5 is 7.
+Deck 0:
+	5 HEART
+	35 DIAMOND
+	14 SPADE
+	1 DIAMOND
+	8 SPADE
+	5 HEART
+	2 SPADE
+	5 SPADE
+
+Deck 1:
+	11 HEART
+	8 DIAMOND
+	13 SPADE
+	3 CLUB
+	12 CLUB
+	3 HEART
+	7 HEART
+	14 HEART
+	11 HEART
+
+Deck 2:
+	6 CLUB
+	4 SPADE
+	5 DIAMOND
+	4 SPADE
+	4 SPADE
+	11 (null)
+
+Deck 3:
+	80 DIAMOND
+	14 CLUB
+	9 CLUB
+	6 HEART
+	6 (null)
+	8 DIAMOND
+	13 CLUB
+	9 CLUB
+	13 SPADE
+	9 DIAMOND
+	4 DIAMOND
+
+Deck 4:
+	1 SPADE
+	7 CLUB
+	12 SPADE
+	4 DIAMOND
+	12 DIAMOND
+
+Deck 5:
+	98 DIAMOND
+	7 DIAMOND
+	14 HEART
+	10 SPADE
+	9 DIAMOND
+	1 CLUB
+	8 SPADE
+
+Deck 6:
+	10 DIAMOND
+	66 SPADE
+	1 HEART
+	12 CLUB
+
+The deck 1 was successfully deleted.
+Deck 0:
+	5 HEART
+	35 DIAMOND
+	14 SPADE
+	1 DIAMOND
+	8 SPADE
+	5 HEART
+	2 SPADE
+	5 SPADE
+
+Deck 1:
+	6 CLUB
+	4 SPADE
+	5 DIAMOND
+	4 SPADE
+	4 SPADE
+	11 (null)
+
+Deck 2:
+	80 DIAMOND
+	14 CLUB
+	9 CLUB
+	6 HEART
+	6 (null)
+	8 DIAMOND
+	13 CLUB
+	9 CLUB
+	13 SPADE
+	9 DIAMOND
+	4 DIAMOND
+
+Deck 3:
+	1 SPADE
+	7 CLUB
+	12 SPADE
+	4 DIAMOND
+	12 DIAMOND
+
+Deck 4:
+	98 DIAMOND
+	7 DIAMOND
+	14 HEART
+	10 SPADE
+	9 DIAMOND
+	1 CLUB
+	8 SPADE
+
+Deck 5:
+	10 DIAMOND
+	66 SPADE
+	1 HEART
+	12 CLUB
+
+The deck 3 was successfully deleted.
+Deck 0:
+	5 HEART
+	35 DIAMOND
+	14 SPADE
+	1 DIAMOND
+	8 SPADE
+	5 HEART
+	2 SPADE
+	5 SPADE
+
+Deck 1:
+	6 CLUB
+	4 SPADE
+	5 DIAMOND
+	4 SPADE
+	4 SPADE
+	11 (null)
+
+Deck 2:
+	80 DIAMOND
+	14 CLUB
+	9 CLUB
+	6 HEART
+	6 (null)
+	8 DIAMOND
+	13 CLUB
+	9 CLUB
+	13 SPADE
+	9 DIAMOND
+	4 DIAMOND
+
+Deck 3:
+	98 DIAMOND
+	7 DIAMOND
+	14 HEART
+	10 SPADE
+	9 DIAMOND
+	1 CLUB
+	8 SPADE
+
+Deck 4:
+	10 DIAMOND
+	66 SPADE
+	1 HEART
+	12 CLUB
+
+Deck 0:
+	5 HEART
+	35 DIAMOND
+	14 SPADE
+	1 DIAMOND
+	8 SPADE
+	5 HEART
+	2 SPADE
+	5 SPADE
+
+Deck 1:
+	6 CLUB
+	4 SPADE
+	5 DIAMOND
+	4 SPADE
+	4 SPADE
+	11 (null)
+
+Deck 2:
+	80 DIAMOND
+	14 CLUB
+	9 CLUB
+	6 HEART
+	6 (null)
+	8 DIAMOND
+	13 CLUB
+	9 CLUB
+	13 SPADE
+	9 DIAMOND
+	4 DIAMOND
+
+Deck 3:
+	98 DIAMOND
+	7 DIAMOND
+	14 HEART
+	10 SPADE
+	9 DIAMOND
+	1 CLUB
+	8 SPADE
+
+Deck 4:
+	10 DIAMOND
+	66 SPADE
+	1 HEART
+	12 CLUB
+
+Deck 0:
+	5 HEART
+	35 DIAMOND
+	14 SPADE
+	1 DIAMOND
+	8 SPADE
+	5 HEART
+	2 SPADE
+	5 SPADE
+
+Deck 1:
+	6 CLUB
+	4 SPADE
+	5 DIAMOND
+	4 SPADE
+	4 SPADE
+	11 (null)
+
+Deck 2:
+	80 DIAMOND
+	14 CLUB
+	9 CLUB
+	6 HEART
+	6 (null)
+	8 DIAMOND
+	13 CLUB
+	9 CLUB
+	13 SPADE
+	9 DIAMOND
+	4 DIAMOND
+
+Deck 3:
+	98 DIAMOND
+	7 DIAMOND
+	14 HEART
+	10 SPADE
+	9 DIAMOND
+	1 CLUB
+	8 SPADE
+
+Deck 4:
+	10 DIAMOND
+	66 SPADE
+	1 HEART
+	12 CLUB
+
+Deck 0:
+	5 HEART
+	35 DIAMOND
+	14 SPADE
+	1 DIAMOND
+	8 SPADE
+	5 HEART
+	2 SPADE
+	5 SPADE
+
+Deck 1:
+	6 CLUB
+	4 SPADE
+	

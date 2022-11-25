@@ -1,0 +1,832 @@
+The deck was successfully created with 2 cards.
+The deck was successfully created with 3 cards.
+The deck was successfully created with 8 cards.
+The length of deck 0 is 2.
+The deck 0 was successfully deleted.
+The deck was successfully created with 2 cards.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+
+Deck 1:
+	1 CLUB
+	2 CLUB
+	9 CLUB
+	5 DIAMOND
+	8 SPADE
+	11 DIAMOND
+	11 DIAMOND
+	14 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Error: deleteCard
+The card was successfully deleted from deck 0.
+The deck was successfully created with 4 cards.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+
+Deck 1:
+	1 CLUB
+	2 CLUB
+	9 CLUB
+	5 DIAMOND
+	8 SPADE
+	11 DIAMOND
+	11 DIAMOND
+	14 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+Pachet gol
+
+The deck was successfully created with 8 cards.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+
+Deck 1:
+	1 CLUB
+	2 CLUB
+	9 CLUB
+	5 DIAMOND
+	8 SPADE
+	11 DIAMOND
+	11 DIAMOND
+	14 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+The length of deck 1 is 8.
+The cards were successfully added to deck 0.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+
+Deck 1:
+	1 CLUB
+	2 CLUB
+	9 CLUB
+	5 DIAMOND
+	8 SPADE
+	11 DIAMOND
+	11 DIAMOND
+	14 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+The deck was successfully created with 2 cards.
+The length of deck 0 is 4.
+The length of deck 0 is 4.
+The cards were successfully added to deck 0.
+The deck was successfully created with 8 cards.
+The card was successfully deleted from deck 87.
+The length of deck 0 is 5.
+The number of decks is 7.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+	1 CLUB
+	2 CLUB
+	9 CLUB
+	5 DIAMOND
+	8 SPADE
+	11 DIAMOND
+	11 DIAMOND
+	14 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+The cards were successfully added to deck 3.
+The length of deck 0 is 5.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+	1 CLUB
+	2 CLUB
+	9 CLUB
+	5 DIAMOND
+	8 SPADE
+	11 DIAMOND
+	11 DIAMOND
+	14 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+	5 DIAMOND
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+The number of decks is 7.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+	1 CLUB
+	2 CLUB
+	9 CLUB
+	5 DIAMOND
+	8 SPADE
+	11 DIAMOND
+	11 DIAMOND
+	14 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+	5 DIAMOND
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+The length of deck 1 is 8.
+The cards were successfully added to deck 1.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+	1 CLUB
+	2 CLUB
+	9 CLUB
+	5 DIAMOND
+	8 SPADE
+	11 DIAMOND
+	11 DIAMOND
+	14 DIAMOND
+	13 HEART
+	8 DIAMOND
+	4 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+	5 DIAMOND
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+The card was successfully deleted from deck 1.
+The number of decks is 7.
+The card was successfully deleted from deck 2.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+	1 CLUB
+	2 CLUB
+	9 CLUB
+	5 DIAMOND
+	11 DIAMOND
+	11 DIAMOND
+	14 DIAMOND
+	13 HEART
+	8 DIAMOND
+	4 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+	5 DIAMOND
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+	1 CLUB
+	2 CLUB
+	9 CLUB
+	5 DIAMOND
+	11 DIAMOND
+	11 DIAMOND
+	14 DIAMOND
+	13 HEART
+	8 DIAMOND
+	4 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+	5 DIAMOND
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+The number of decks is 7.
+The length of deck 1 is 10.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+	1 CLUB
+	2 CLUB
+	9 CLUB
+	5 DIAMOND
+	11 DIAMOND
+	11 DIAMOND
+	14 DIAMOND
+	13 HEART
+	8 DIAMOND
+	4 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+	5 DIAMOND
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+The deck 1 was successfully deleted.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+Pachet gol
+
+Deck 2:
+	5 DIAMOND
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+The deck was successfully created with 1 cards.
+The deck was successfully created with 3 cards.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+Pachet gol
+
+Deck 2:
+	5 DIAMOND
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+Deck 7:
+Pachet gol
+
+The deck 4 was successfully deleted.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+Pachet gol
+
+Deck 2:
+	5 DIAMOND
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+The number of decks is 7.
+The number of decks is 7.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+Pachet gol
+
+Deck 2:
+	5 DIAMOND
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+Pachet gol
+
+Deck 2:
+	5 DIAMOND
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+The length of deck 1 is 0.
+The deck 1 was successfully deleted.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+	5 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+	5 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+The deck was successfully created with 3 cards.
+The card was successfully deleted from deck 1.
+The number of decks is 7.
+The deck was successfully created with 8 cards.
+The card was successfully deleted from deck 3.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+	5 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+Deck 7:
+Pachet gol
+
+The number of decks is 8.
+The card was successfully deleted from deck 1.
+The length of deck 4 is 0.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+
+Deck 1:
+	5 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+Deck 7:
+Pachet gol
+
+The cards were successfully added to deck 0.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+	11 (null)
+	6 SPADE
+
+Deck 1:
+	5 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+Deck 7:
+Pachet gol
+
+The length of deck 1 is 1.
+The deck was successfully created with 3 cards.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+	11 (null)
+	6 SPADE
+
+Deck 1:
+	5 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+Deck 7:
+Pachet gol
+
+Deck 8:
+Pachet gol
+
+The cards were successfully added to deck 3.
+The number of decks is 9.
+The number of decks is 9.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+	11 (null)
+	6 SPADE
+
+Deck 1:
+	5 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+	8 HEART
+	4 CLUB
+	6 SPADE
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+Deck 7:
+Pachet gol
+
+Deck 8:
+Pachet gol
+
+The card was successfully deleted from deck 3.
+The length of deck 4 is 0.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+	11 (null)
+	6 SPADE
+
+Deck 1:
+	5 DIAMOND
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+	8 HEART
+	6 SPADE
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+Deck 7:
+Pachet gol
+
+Deck 8:
+Pachet gol
+
+The number of decks is 9.
+The deck 3 was successfully deleted.
+The deck 1 was successfully deleted.
+The length of deck 0 is 7.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+	11 (null)
+	6 SPADE
+
+Deck 1:
+Pachet gol
+
+Deck 2:
+Pachet gol
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+The number of decks is 7.
+The cards were successfully added to deck 2.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+	11 (null)
+	6 SPADE
+
+Deck 1:
+Pachet gol
+
+Deck 2:
+	3 SPADE
+	6 HEART
+
+Deck 3:
+Pachet gol
+
+Deck 4:
+Pachet gol
+
+Deck 5:
+Pachet gol
+
+Deck 6:
+Pachet gol
+
+The card was successfully deleted from deck 3.
+The number of decks is 7.
+The number of decks is 7.
+The deck was successfully created with 4 cards.
+Deck 0:
+	12 DIAMOND
+	2 CLUB
+	9 HEART
+	12 DIAMOND
+	2 SPADE
+	12 CLUB
+	11 (null)
+	6 SPADE
+
+Deck 1:
+Pachet gol

@@ -1,0 +1,287 @@
+==16444== Invalid read of size 1
+==16444==    at 0x109490: printCard (carte.c:63)
+==16444==    by 0x1096B8: printPachetReal (pachet.c:70)
+==16444==    by 0x1096C8: printPachetReal (pachet.c:72)
+==16444==    by 0x1096C8: printPachetReal (pachet.c:72)
+==16444==    by 0x10970F: printPachet (pachet.c:81)
+==16444==    by 0x109C40: main (tema1.c:82)
+==16444==  Address 0x4a992d4 is 20 bytes inside a block of size 24 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109436: deleteCard (carte.c:52)
+==16444==    by 0x10945E: removeCardAtPos (carte.c:57)
+==16444==    by 0x109478: removeCardAtPos (carte.c:59)
+==16444==    by 0x109478: removeCardAtPos (carte.c:59)
+==16444==    by 0x109642: removeCard (pachet.c:57)
+==16444==    by 0x109A14: main (tema1.c:51)
+==16444==  Block was alloc'd at
+==16444==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x1092A6: createCard (carte.c:9)
+==16444==    by 0x109868: main (tema1.c:29)
+==16444== 
+==16444== Invalid read of size 4
+==16444==    at 0x1094A5: printCard (carte.c:63)
+==16444==    by 0x1096B8: printPachetReal (pachet.c:70)
+==16444==    by 0x1096C8: printPachetReal (pachet.c:72)
+==16444==    by 0x1096C8: printPachetReal (pachet.c:72)
+==16444==    by 0x10970F: printPachet (pachet.c:81)
+==16444==    by 0x109C40: main (tema1.c:82)
+==16444==  Address 0x4a992d0 is 16 bytes inside a block of size 24 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109436: deleteCard (carte.c:52)
+==16444==    by 0x10945E: removeCardAtPos (carte.c:57)
+==16444==    by 0x109478: removeCardAtPos (carte.c:59)
+==16444==    by 0x109478: removeCardAtPos (carte.c:59)
+==16444==    by 0x109642: removeCard (pachet.c:57)
+==16444==    by 0x109A14: main (tema1.c:51)
+==16444==  Block was alloc'd at
+==16444==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x1092A6: createCard (carte.c:9)
+==16444==    by 0x109868: main (tema1.c:29)
+==16444== 
+==16444== Invalid read of size 8
+==16444==    at 0x1096BD: printPachetReal (pachet.c:72)
+==16444==    by 0x1096C8: printPachetReal (pachet.c:72)
+==16444==    by 0x1096C8: printPachetReal (pachet.c:72)
+==16444==    by 0x10970F: printPachet (pachet.c:81)
+==16444==    by 0x109C40: main (tema1.c:82)
+==16444==  Address 0x4a992c8 is 8 bytes inside a block of size 24 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109436: deleteCard (carte.c:52)
+==16444==    by 0x10945E: removeCardAtPos (carte.c:57)
+==16444==    by 0x109478: removeCardAtPos (carte.c:59)
+==16444==    by 0x109478: removeCardAtPos (carte.c:59)
+==16444==    by 0x109642: removeCard (pachet.c:57)
+==16444==    by 0x109A14: main (tema1.c:51)
+==16444==  Block was alloc'd at
+==16444==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x1092A6: createCard (carte.c:9)
+==16444==    by 0x109868: main (tema1.c:29)
+==16444== 
+==16444== Invalid free() / delete / delete[] / realloc()
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Address 0x4a9aaa8 is 72 bytes inside a block of size 96 alloc'd
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x1097E5: main (tema1.c:22)
+==16444== 
+==16444== Invalid read of size 8
+==16444==    at 0x4852925: memmove (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x10996B: main (tema1.c:42)
+==16444==  Address 0x4a9ae78 is 24 bytes inside a block of size 72 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Block was alloc'd at
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444== 
+==16444== Invalid write of size 8
+==16444==    at 0x485293B: memmove (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x10996B: main (tema1.c:42)
+==16444==  Address 0x4a9ae60 is 0 bytes inside a block of size 72 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Block was alloc'd at
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444== 
+==16444== Invalid read of size 8
+==16444==    at 0x485293F: memmove (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x10996B: main (tema1.c:42)
+==16444==  Address 0x4a9ae80 is 32 bytes inside a block of size 72 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Block was alloc'd at
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444== 
+==16444== Invalid write of size 8
+==16444==    at 0x4852943: memmove (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x10996B: main (tema1.c:42)
+==16444==  Address 0x4a9ae68 is 8 bytes inside a block of size 72 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Block was alloc'd at
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444== 
+==16444== Invalid read of size 8
+==16444==    at 0x4852947: memmove (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x10996B: main (tema1.c:42)
+==16444==  Address 0x4a9ae88 is 40 bytes inside a block of size 72 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Block was alloc'd at
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444== 
+==16444== Invalid write of size 8
+==16444==    at 0x485294B: memmove (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x10996B: main (tema1.c:42)
+==16444==  Address 0x4a9ae70 is 16 bytes inside a block of size 72 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Block was alloc'd at
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444== 
+==16444== Invalid read of size 8
+==16444==    at 0x485294F: memmove (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x10996B: main (tema1.c:42)
+==16444==  Address 0x4a9ae90 is 48 bytes inside a block of size 72 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Block was alloc'd at
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444== 
+==16444== Invalid write of size 8
+==16444==    at 0x4852953: memmove (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x10996B: main (tema1.c:42)
+==16444==  Address 0x4a9ae78 is 24 bytes inside a block of size 72 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Block was alloc'd at
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444== 
+==16444== Invalid read of size 8
+==16444==    at 0x485298D: memmove (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x10996B: main (tema1.c:42)
+==16444==  Address 0x4a9ae98 is 56 bytes inside a block of size 72 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Block was alloc'd at
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444== 
+==16444== Invalid write of size 8
+==16444==    at 0x4852990: memmove (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x10996B: main (tema1.c:42)
+==16444==  Address 0x4a9ae80 is 32 bytes inside a block of size 72 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Block was alloc'd at
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444== 
+==16444== Invalid free() / delete / delete[] / realloc()
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444==  Address 0x4a9ae60 is 0 bytes inside a block of size 72 free'd
+==16444==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109692: deletePachet (pachet.c:64)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444==  Block was alloc'd at
+==16444==    at 0x484DCD3: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109980: main (tema1.c:43)
+==16444== 
+==16444== Invalid write of size 8
+==16444==    at 0x4852990: memmove (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x1098B0: main (tema1.c:32)
+==16444==  Address 0x4a9af50 is 16 bytes after a block of size 80 in arena "client"
+==16444== 
+==16444== Conditional jump or move depends on uninitialised value(s)
+==16444==    at 0x109532: addCard (pachet.c:26)
+==16444==    by 0x109B1B: main (tema1.c:64)
+==16444== 
+==16444== Conditional jump or move depends on uninitialised value(s)
+==16444==    at 0x1096EE: printPachet (pachet.c:78)
+==16444==    by 0x109C40: main (tema1.c:82)
+==16444== 
+==16444== Conditional jump or move depends on uninitialised value(s)
+==16444==    at 0x109685: deletePachet (pachet.c:62)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444== 
+==16444== Conditional jump or move depends on uninitialised value(s)
+==16444==    at 0x1095A8: removeCard (pachet.c:40)
+==16444==    by 0x10967B: deletePachet (pachet.c:63)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444== 
+==16444== Conditional jump or move depends on uninitialised value(s)
+==16444==    at 0x1095C5: removeCard (pachet.c:44)
+==16444==    by 0x10967B: deletePachet (pachet.c:63)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444== 
+==16444== Conditional jump or move depends on uninitialised value(s)
+==16444==    at 0x1095E6: removeCard (pachet.c:48)
+==16444==    by 0x10967B: deletePachet (pachet.c:63)
+==16444==    by 0x109924: main (tema1.c:40)
+==16444== 
+==16444== Invalid read of size 4
+==16444==    at 0x1096E9: printPachet (pachet.c:78)
+==16444==    by 0x109CCD: main (tema1.c:93)
+==16444==  Address 0x28 is not stack'd, malloc'd or (recently) free'd
+==16444== 
+==16444== 
+==16444== Process terminating with default action of signal 11 (SIGSEGV)
+==16444==  Access not within mapped region at address 0x28
+==16444==    at 0x1096E9: printPachet (pachet.c:78)
+==16444==    by 0x109CCD: main (tema1.c:93)
+==16444==  If you believe this happened as a result of a stack
+==16444==  overflow in your program's main thread (unlikely but
+==16444==  possible), you can try to increase the size of the
+==16444==  main thread stack using the --main-stacksize= flag.
+==16444==  The main thread stack size used in this run was 8388608.
+==16444== 24 bytes in 1 blocks are still reachable in loss record 1 of 8
+==16444==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x1094D6: createPachet (pachet.c:11)
+==16444==    by 0x1097F3: main (tema1.c:23)
+==16444== 
+==16444== 50 bytes in 1 blocks are still reachable in loss record 2 of 8
+==16444==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x109751: main (tema1.c:12)
+==16444== 
+==16444== 72 bytes in 3 blocks are indirectly lost in loss record 3 of 8
+==16444==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x1092A6: createCard (carte.c:9)
+==16444==    by 0x109B10: main (tema1.c:64)
+==16444== 
+==16444== 96 bytes in 4 blocks are still reachable in loss record 4 of 8
+==16444==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x1092A6: createCard (carte.c:9)
+==16444==    by 0x109868: main (tema1.c:29)
+==16444== 
+==16444== 240 bytes in 10 blocks are indirectly lost in loss record 5 of 8
+==16444==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x1092A6: createCard (carte.c:9)
+==16444==    by 0x109868: main (tema1.c:29)
+==16444== 
+==16444== 408 (96 direct, 312 indirect) bytes in 4 blocks are definitely lost in loss record 6 of 8
+==16444==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x1094D6: createPachet (pachet.c:11)
+==16444==    by 0x1097F3: main (tema1.c:23)
+==16444== 
+==16444== 4,096 bytes in 1 blocks are still reachable in loss record 7 of 8
+==16444==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x48EBC23: _IO_file_doallocate (filedoalloc.c:101)
+==16444==    by 0x48FAD5F: _IO_doallocbuf (genops.c:347)
+==16444==    by 0x48F9D5B: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+==16444==    by 0x48FAE15: _IO_default_uflow (genops.c:362)
+==16444==    by 0x48ED49B: _IO_getline_info (iogetline.c:60)
+==16444==    by 0x48EC48F: fgets (iofgets.c:53)
+==16444==    by 0x10976D: main (tema1.c:15)
+==16444== 
+==16444== 4,096 bytes in 1 blocks are still reachable in loss record 8 of 8
+==16444==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16444==    by 0x48EBC23: _IO_file_doallocate (filedoalloc.c:101)
+==16444==    by 0x48FAD5F: _IO_doallocbuf (genops.c:347)
+==16444==    by 0x48F9FDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+==16444==    by 0x48F8754: _IO_new_file_xsputn (fileops.c:1243)
+==16444==    by 0x48F8754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==16444==    by 0x48E21CC: outstring_func (vfprintf-internal.c:239)
+==16444==    by 0x48E21CC: __vfprintf_internal (vfprintf-internal.c:1263)
+==16444==    by 0x48CD81E: printf (printf.c:33)
+==16444==    by 0x1098CD: main (tema1.c:35)
+==16444== 
+timeout: the monitored command dumped core

@@ -25,6 +25,7 @@ char getSymbol(char* string) {
     } else if (strstr(string, "SPADE")) {
         return 's';
     }
+    return 0;
 }
 
 char* getSymbol2(char c) {
@@ -37,6 +38,7 @@ char* getSymbol2(char c) {
     } else if (c=='s') {
         return "SPADE";
     }
+    return NULL;
 }
 
 void deleteCard(Node* node) {
