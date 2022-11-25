@@ -61,7 +61,7 @@ void removeCard(Pachet* pachet, int index) {
 void deletePachet(Pachet* pachet) {
     while (pachet->size)
         removeCard(pachet, 0);
-    //free(pachet);
+    free(pachet);
 }
 
 void printPachetReal(Node* head) {

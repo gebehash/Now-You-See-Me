@@ -31,17 +31,17 @@ int main() {
             
             memcpy(vector + (index * SIZEOF_PACHET), p, SIZEOF_PACHET);
             index ++;
-
+            deletePachet(p);
             printf("The deck was successfully created with %d cards.\n", number);
         }
 
         if (strstr(command, "DEL_DECK")) {
             int number = atoi(strtok(NULL, " \n"));
-            deletePachet(vector + number * SIZEOF_PACHET);
             total_size -= SIZEOF_PACHET;
-            memcpy(vector + (number * SIZEOF_PACHET), vector + ((number + 1)* SIZEOF_PACHET), (total_size) - (SIZEOF_PACHET * number));
+            deletePachet(vector + number * SIZEOF_PACHET);
+            if (total_size / SIZEOF_PACHET > 1)
+                memcpy(vector + (number * SIZEOF_PACHET), vector + ((number + 1)* SIZEOF_PACHET), (total_size) - (SIZEOF_PACHET * number));
             vector = realloc(vector, total_size);
-
             printf("The deck %d was successfully deleted.\n", number);
         }
 
@@ -88,18 +88,6 @@ int main() {
         fgets(buffer, 50, stdin);
         command = strtok(buffer, " \n");
     }
-
-    // for (int i = 0; i < 2; i++) {
-    //     printPachet(vector + i * SIZEOF_PACHET);
-    //     printf("\n");
-    // }
-    printf("VECTOR: %p\n", vector);
-    printf("_____sizeof_pp::%d\n", total_size / SIZEOF_PACHET);
-    // for (int i = 0; i < total_size / SIZEOF_PACHET; i++) {
-    //     printf("\tdeleted at: %p\n", vector + i * SIZEOF_PACHET);
-    //     deletePachet(vector + i * SIZEOF_PACHET);
-    //     free()
-    // }
 
     free(buffer);
     free(vector);

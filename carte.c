@@ -38,7 +38,7 @@ char* getSymbol2(char c) {
     } else if (c=='s') {
         return "SPADE";
     }
-    return NULL;
+    return "";
 }
 
 void deleteCard(Node* node) {
@@ -60,5 +60,14 @@ void removeCardAtPos(Node* node, int index) {
 }
 
 void printCard(Node* node) {
-    printf("\t%d %s\n", node->val, getSymbol2(node->simbol));
+    if (node == NULL) {
+        printf("THIS IS NULL _______________________@@@@@@@@@@@@@@@@@@@@@@@\n");
+        return;
+    }
+    char *s = malloc(50);
+    printf("node: %p\n", node);
+    char c = node->simbol;
+    strcpy(s, getSymbol2(c));
+    printf("\t%d %s\n", node->val, s);
+    free(s);
 }
