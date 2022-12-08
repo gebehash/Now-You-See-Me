@@ -1,26 +1,25 @@
 #include "carte.c"
 #pragma pack(1)
-typedef struct Pachet {
+typedef struct Deck {
     Node* head;
     Node* tail;
     int size;
-}Pachet;
+}Deck;
 
-
-Pachet* createPachet() {
-    Pachet* p = malloc(sizeof(Pachet));
+Deck* createDeck() {
+    Deck* p = malloc(sizeof(Deck));
     p->head = 0;
     p->tail = 0;
     p->size = 0;
-    // printf("%d", sizeof(Pachet));
+    // printf("%d", sizeof(Deck));
     return p;
 }
 
-int getSize(Pachet* p) {
+int getSize(Deck* p) {
     return p->size;
 }
 
-void addCard(/*int val, char simbol*/Node* node, Pachet* pachet) {
+void addCard(/*int val, char simbol*/Node* node, Deck* pachet) {
     // Node *node = createCard(val,simbol);
 
     if (pachet->head != 0) {
@@ -36,47 +35,49 @@ void addCard(/*int val, char simbol*/Node* node, Pachet* pachet) {
     // printf("pachetsize  %d\n", pachet->size);
 }
 
-void removeCard(Pachet* pachet, int index) {
-    if (pachet->size == 0) {
-        free(pachet);
+void removeCard(Deck* pachet, int index) {
+    if (pachet->size == 0)
         return;
-    }
     if (pachet->size <= index)
         return;
     if (index == 0) {
         Node *aux = pachet->head;
         if (pachet->size == 1) {
-            pachet->tail = 0;
-            pachet->head = 0;
+            deleteCard(pachet->head);
         } else {
             pachet->head = pachet->head->next;
             pachet->head->prev = 0;
+            free(aux);
         }
-        free(aux);
     } else
         removeCardAtPos(pachet->head, index);
     pachet->size--;
 }
 
-void deletePachet(Pachet* pachet) {
-    while (pachet->size)
+void deleteDeck(Deck* pachet) {
+    printf("deck: %p", pachet);
+    if (pachet == NULL)
+        return;
+    
+    while (pachet->size) {
         removeCard(pachet, 0);
-    free(pachet);
+        if (pachet == NULL)
+            return;
+    }
 }
 
 void printPachetReal(Node* head) {
-    if (head == 0)
+    if (head == NULL)
         return;
     printCard(head);
-    // printf("\t");
     printPachetReal(head->next);
 }
 
-void printPachet(Pachet* pachet) {
+void printPachet(Deck* pachet) {
     if (pachet == NULL)
         return;
     if (pachet->size == 0)
-        printf("Pachet gol\n");
+        printf("Deck gol\n");
     else
         printPachetReal(pachet->head); 
 }

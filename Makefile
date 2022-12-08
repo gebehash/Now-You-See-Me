@@ -1,4 +1,4 @@
-CC=gcc
+CC=gcc-11
 CFLAGS=-g -I. -Wall -lm
 EXNAME=tema1
 LANGUAGE=c

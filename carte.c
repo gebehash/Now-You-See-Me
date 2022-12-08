@@ -15,7 +15,7 @@ Node* createCard(int val, char simbol) {
     return node;
 }
 
-char getSymbol(char* string) {
+char createSymbol(char* string) {
     if (strstr(string, "HEART")) {
         return 'h';
     } else if (strstr(string, "CLUB")) {
@@ -28,7 +28,7 @@ char getSymbol(char* string) {
     return 0;
 }
 
-char* getSymbol2(char c) {
+char* getSymbol(char c) {
     if (c == 'h') {
         return "HEART";
     } else if (c =='c') {
@@ -46,8 +46,6 @@ void deleteCard(Node* node) {
     if (node->prev != NULL && node->next != NULL) {
         node->prev->next = node->next;
         node->next->prev = node->prev;
-    } else {
-        printf("Error: deleteCard\n");
     }
     free(node);
 }
@@ -64,10 +62,5 @@ void printCard(Node* node) {
         printf("THIS IS NULL _______________________@@@@@@@@@@@@@@@@@@@@@@@\n");
         return;
     }
-    char *s = malloc(50);
-    printf("node: %p\n", node);
-    char c = node->simbol;
-    strcpy(s, getSymbol2(c));
-    printf("\t%d %s\n", node->val, s);
-    free(s);
+    printf("\t%d %s\n", node->val, getSymbol(node->simbol));
 }
