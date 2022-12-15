@@ -30,9 +30,7 @@ void addCard(/*int val, char simbol*/Node* node, Deck* pachet) {
         pachet->head = node;
         pachet->tail = node;
     }
-    //printf("Added card %d\n", val);
     pachet->size++;
-    // printf("pachetsize  %d\n", pachet->size);
 }
 
 void removeCard(Deck* pachet, int index) {
@@ -55,7 +53,6 @@ void removeCard(Deck* pachet, int index) {
 }
 
 void deleteDeck(Deck* pachet) {
-    printf("deck: %p", pachet);
     if (pachet == NULL)
         return;
     
@@ -64,6 +61,7 @@ void deleteDeck(Deck* pachet) {
         if (pachet == NULL)
             return;
     }
+    free(pachet);
 }
 
 void printPachetReal(Node* head) {
@@ -76,8 +74,69 @@ void printPachetReal(Node* head) {
 void printPachet(Deck* pachet) {
     if (pachet == NULL)
         return;
-    if (pachet->size == 0)
-        printf("Deck gol\n");
+    if (pachet->size == 0);
+        //printf("Deck gol\n");
     else
         printPachetReal(pachet->head); 
+}
+
+void shuffleDeck(Deck* pachet) {
+    Node* first = pachet->head;
+    Node* last = pachet->tail;
+    Node* mid = pachet->head;
+    
+    for (int i = 0; i < pachet->size/2; i++)
+        mid = mid->next;
+    
+    pachet->head = mid->next;
+    pachet->tail = mid;
+    mid->next = 0;
+    last->next = first;
+}
+
+Deck* mergeDecks(Deck* deck1, Deck* deck2) {
+    printf("\n");
+    printPachet(deck1);
+        printf("\n");
+
+    printPachet(deck2);
+    Node* head1 = deck1->head;
+    Node* head2 = deck2->head;
+    Deck* newDeck = createDeck();
+    
+    while (head1 && head2) {
+        Node* aux1 = head1;
+        Node *aux2 = head2;
+        addCard(head1, newDeck);
+        addCard(head2, newDeck);
+        head1 = head1->next;
+        head2 = head2->next;
+        aux1->next = NULL;
+        aux2->next = NULL;
+        printf("%p\t%p\n", head1, head2);
+    }
+
+    while (head1) {
+        Node* aux1 = head1;
+        addCard(head1, newDeck);
+        head1 = head1->next;
+        if (head1->next == 0)
+            head1 = 0;
+        aux1->next = NULL;
+        printf("%p\t%p\n", head1, head2);
+        printf("Current card: %p, -> next: %p\n", head1, head1->next);
+        for (long long i = 0; i < __INT_MAX__/ 1000;) {
+            i++;
+        }
+    }
+
+    while (head2) {
+        Node *aux2 = head2;
+        addCard(head2, newDeck);
+        head2 = head2->next;
+        aux2->next = NULL;
+                printf("%p\t%p\n", head1, head2);
+
+    }
+    return newDeck;
 }

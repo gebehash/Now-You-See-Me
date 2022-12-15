@@ -59,8 +59,7 @@ void removeCardAtPos(Node* node, int index) {
 
 void printCard(Node* node) {
     if (node == NULL) {
-        printf("THIS IS NULL _______________________@@@@@@@@@@@@@@@@@@@@@@@\n");
         return;
     }
-    printf("\t%d %s\n", node->val, getSymbol(node->simbol));
+    printf("\t%d %s current card:%p\tprev card:%p\tnext card:%p\n", node->val, getSymbol(node->simbol), node, node->prev, node->next);
 }

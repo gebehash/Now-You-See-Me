@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include "pachet.c"
+#include <unistd.h>
+
+void swap(int *a, int *b) {
+    int aux = *a;
+    *a = *b;
+    *b = aux;
+}
 
 int main() {
     int numberOfDecks = 0;
@@ -33,15 +40,13 @@ int main() {
             if (deckIndex > numberOfDecks - 1)
                 continue;
             Deck *deck = decks[deckIndex];
-            printf("aaaaaaaaaaaaaaaaaaaa: %p\n", deck);
+            //printf("aaaaaaaaaaaaaaaaaaaa: %p\n", deck);
             deleteDeck(deck);
-            free(deck);
-
             for (int i = deckIndex; i < numberOfDecks - 1; i++)
                 decks[i] = decks[i + 1];
             
             numberOfDecks--;
-            decks = realloc(decks, numberOfDecks);
+            decks = realloc(decks, numberOfDecks * (sizeof(Deck *)));
             printf("The deck %d was successfully deleted.\n", deckIndex);
         }
 
@@ -52,11 +57,11 @@ int main() {
             removeCard(deck, indexCard);
             if (deck->size == 0) {
                 free(deck);
-                printf("pachet gol -> sterg referinta din decks\n");
+                //printf("pachet gol -> sterg referinta din decks\n");
                 for (int i = indexDeck; i < numberOfDecks - 1; i++)
                 decks[i] = decks[i + 1];
                 numberOfDecks--;
-                decks = realloc(decks, numberOfDecks);
+                decks = realloc(decks, numberOfDecks * (sizeof(Deck *)));
             }
                 //shiftez la stanga vetorul
             printf("The card was successfully deleted from deck %d.\n", indexDeck);
@@ -86,10 +91,40 @@ int main() {
         }
 
         if (strstr(command, "SHOW_ALL")) {
+            printf("NUMBER of Decks: %d\n", numberOfDecks);
             for (int i = 0; i < numberOfDecks; i++) {
                 printf("Deck %d:\n", i);
                 printPachet(decks[i]);
             }
+        }
+
+        if (strstr(command, "SHUFFLE_DECK")) {
+            int indexDeck = atoi(strtok(NULL, " \n"));
+            Deck *deck = decks[indexDeck];
+            shuffleDeck(deck);
+        }
+
+        if (strstr(command, "MERGE_DECKS")) {
+            int deckIndex1 = atoi(strtok(NULL, " \n"));
+            int deckIndex2 = atoi(strtok(NULL, " \n"));
+            Deck *deck1 = decks[deckIndex1];
+            Deck *deck2 = decks[deckIndex2];
+            Deck *newDeck = mergeDecks(deck1, deck2);
+            printf("Merge completed successfully!\n");
+            deleteDeck(decks[deckIndex1]);
+            deleteDeck(decks[deckIndex2]);
+            if (deckIndex1 > deckIndex2)
+                swap(&deckIndex1, &deckIndex2);
+            for (int i = deckIndex1; i < numberOfDecks - 1; i++)
+                decks[i] = decks[i + 1];
+            numberOfDecks--;
+            deckIndex2--;
+            for (int i = deckIndex2; i < numberOfDecks - 1; i++)
+                decks[i] = decks[i + 1];
+            decks = (Deck **)realloc(decks, numberOfDecks * (sizeof(Deck *)));
+            decks[numberOfDecks - 1] = newDeck;
+
+            printf("The deck %d and the deck %d were successfully merged.\n", deckIndex1, deckIndex2);
         }
 
  
@@ -98,8 +133,8 @@ int main() {
     }
 
     free(buffer);
-    for (int i = 0; i < numberOfDecks; i++)
-        free(decks[i]);
+    for (int j = 0; j < numberOfDecks; j++)
+        deleteDeck(decks[j]);
     free(decks);
     return 0;
 }
