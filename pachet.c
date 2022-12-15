@@ -105,38 +105,27 @@ Deck* mergeDecks(Deck* deck1, Deck* deck2) {
     Deck* newDeck = createDeck();
     
     while (head1 && head2) {
-        Node* aux1 = head1;
-        Node *aux2 = head2;
-        addCard(head1, newDeck);
-        addCard(head2, newDeck);
+        Node *aux1 = createCard(head1->val, head1->simbol);
+        Node *aux2 = createCard(head2->val, head2->simbol);
+        addCard(aux1, newDeck);
+        addCard(aux2, newDeck);
         head1 = head1->next;
         head2 = head2->next;
-        aux1->next = NULL;
-        aux2->next = NULL;
         printf("%p\t%p\n", head1, head2);
     }
 
     while (head1) {
-        Node* aux1 = head1;
-        addCard(head1, newDeck);
+        Node *aux1 = createCard(head1->val, head1->simbol);
+        addCard(aux1, newDeck);
         head1 = head1->next;
-        if (head1->next == 0)
-            head1 = 0;
-        aux1->next = NULL;
         printf("%p\t%p\n", head1, head2);
-        printf("Current card: %p, -> next: %p\n", head1, head1->next);
-        for (long long i = 0; i < __INT_MAX__/ 1000;) {
-            i++;
-        }
     }
 
     while (head2) {
-        Node *aux2 = head2;
-        addCard(head2, newDeck);
+        Node *aux2 = createCard(head1->val, head1->simbol);
+        addCard(aux2, newDeck);
         head2 = head2->next;
-        aux2->next = NULL;
-                printf("%p\t%p\n", head1, head2);
-
+        printf("%p\t%p\n", head1, head2);
     }
     return newDeck;
 }
