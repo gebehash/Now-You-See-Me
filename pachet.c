@@ -42,14 +42,27 @@ void removeCard(Deck* pachet, int index) {
         Node *aux = pachet->head;
         if (pachet->size == 1) {
             deleteCard(pachet->head);
+            pachet->head = 0;
+            pachet->tail = 0;
         } else {
             pachet->head = pachet->head->next;
             pachet->head->prev = 0;
             free(aux);
         }
-    } else
-        removeCardAtPos(pachet->head, index);
-    pachet->size--;
+    } else {
+        if (pachet->size == 1) {
+            pachet->head = 0;
+            pachet->tail = 0;
+            deleteCard(pachet->head);
+        } else {
+            removeCardAtPos(pachet->head, index);
+            Node *head = pachet -> head;
+            while (head->next)
+                head = head->next;
+            pachet->tail = head;
+        }
+    }
+    pachet->size = pachet->size - 1;
 }
 
 void deleteDeck(Deck* pachet) {
@@ -95,11 +108,6 @@ void shuffleDeck(Deck* pachet) {
 }
 
 Deck* mergeDecks(Deck* deck1, Deck* deck2) {
-    printf("\n");
-    printPachet(deck1);
-        printf("\n");
-
-    printPachet(deck2);
     Node* head1 = deck1->head;
     Node* head2 = deck2->head;
     Deck* newDeck = createDeck();
@@ -111,21 +119,33 @@ Deck* mergeDecks(Deck* deck1, Deck* deck2) {
         addCard(aux2, newDeck);
         head1 = head1->next;
         head2 = head2->next;
-        printf("%p\t%p\n", head1, head2);
     }
 
     while (head1) {
         Node *aux1 = createCard(head1->val, head1->simbol);
         addCard(aux1, newDeck);
         head1 = head1->next;
-        printf("%p\t%p\n", head1, head2);
     }
 
     while (head2) {
         Node *aux2 = createCard(head1->val, head1->simbol);
         addCard(aux2, newDeck);
         head2 = head2->next;
-        printf("%p\t%p\n", head1, head2);
     }
     return newDeck;
+}
+
+void reverseDeck(Deck *deck) {
+    Node* aux = deck->head;
+    deck->head = deck->tail;
+    deck->tail = aux;
+
+    Node* head = deck->head;
+
+    while(head != 0) {
+        aux = head;
+        head = head->prev;
+        aux->prev = aux->next;
+        aux->next = head;
+    }
 }

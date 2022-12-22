@@ -61,5 +61,5 @@ void printCard(Node* node) {
     if (node == NULL) {
         return;
     }
-    printf("\t%d %s current card:%p\tprev card:%p\tnext card:%p\n", node->val, getSymbol(node->simbol), node, node->prev, node->next);
+    printf("\t%d %s\n", node->val, getSymbol(node->simbol));
 }
