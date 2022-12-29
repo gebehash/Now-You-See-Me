@@ -11,7 +11,7 @@ Node* createCard(int val, char simbol) {
     node->next = 0;
     node->val = val;
     node->simbol = simbol;
-    //printf("Node %d: %p\n", node->val, node);
+    //printf("Created card %d at %p\n", node->val, node);
     return node;
 }
 
@@ -42,11 +42,15 @@ char* getSymbol(char c) {
 }
 
 void deleteCard(Node* node) {
+    if (node == NULL)
+        return;
     //printf("deleted %d: %p\n", node->val, node);
-    if (node->prev != NULL && node->next != NULL) {
+    if (node->prev != NULL)
         node->prev->next = node->next;
+    if (node->next != NULL)
         node->next->prev = node->prev;
-    }
+    
+    //printf("free card at: %p\n", node);
     free(node);
 }
 

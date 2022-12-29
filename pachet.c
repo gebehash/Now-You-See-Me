@@ -40,27 +40,16 @@ void removeCard(Deck* pachet, int index) {
         return;
     if (index == 0) {
         Node *aux = pachet->head;
-        if (pachet->size == 1) {
-            deleteCard(pachet->head);
-            pachet->head = 0;
+        pachet->head = pachet->head->next;
+        deleteCard(aux);
+        if (pachet->size == 1)
             pachet->tail = 0;
-        } else {
-            pachet->head = pachet->head->next;
-            pachet->head->prev = 0;
-            free(aux);
-        }
     } else {
-        if (pachet->size == 1) {
-            pachet->head = 0;
-            pachet->tail = 0;
-            deleteCard(pachet->head);
-        } else {
-            removeCardAtPos(pachet->head, index);
-            Node *head = pachet -> head;
-            while (head->next)
-                head = head->next;
-            pachet->tail = head;
-        }
+        removeCardAtPos(pachet->head, index);
+        Node *head = pachet -> head;
+        while (head->next)
+            head = head->next;
+        pachet->tail = head;
     }
     pachet->size = pachet->size - 1;
 }
@@ -69,11 +58,8 @@ void deleteDeck(Deck* pachet) {
     if (pachet == NULL)
         return;
     
-    while (pachet->size) {
+    while (pachet->size)
         removeCard(pachet, 0);
-        if (pachet == NULL)
-            return;
-    }
     free(pachet);
 }
 
@@ -101,10 +87,12 @@ void shuffleDeck(Deck* pachet) {
     for (int i = 0; i < pachet->size/2; i++)
         mid = mid->next;
     
-    pachet->head = mid->next;
-    pachet->tail = mid;
-    mid->next = 0;
+    pachet->head = mid;
+    pachet->tail = mid->prev;
+    mid->prev = 0;
     last->next = first;
+    first->prev = mid;
+    first->next = 0;
 }
 
 Deck* mergeDecks(Deck* deck1, Deck* deck2) {

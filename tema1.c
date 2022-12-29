@@ -106,10 +106,10 @@ int main() {
                 if (deckIndex < 0 || deckIndex >= numberOfDecks)
                     printf("The provided index is out of bounds for the deck list.\n");
                 else {
-                    if (indexCard < 0 || indexCard >= decks[deckIndex]->size)
+                    Deck *deck = decks[deckIndex];
+                    if (indexCard < 0 || indexCard >= deck->size)
                         printf("The provided index is out of bounds for deck %d.\n", deckIndex);
                     else {
-                        Deck *deck = decks[deckIndex];
                         removeCard(deck, indexCard);
                         if (deck->size == 0) {
                             free(deck);
