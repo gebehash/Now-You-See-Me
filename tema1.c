@@ -255,6 +255,24 @@ int main() {
             default :
                 printf("Invalid command. Please try again.\n");
         }
+
+        // printf("deck 0 size: %d\n", decks[0]->size);
+        // printf("%d => ", decks[0]->head->val);
+        // Node *head = decks[0]->head;
+        // while (head) {
+        //     printf("%d%s | ", head->val, getSymbol(head->simbol));
+        //     head = head -> next;
+        // }
+        // printf(" <= %d\n", decks[0]->tail->val);
+        // printf("%d => ", decks[0]->tail->val);
+        // head = decks[0]->tail;
+        // while (head) {
+        //     printf("%d%s | ", head->val, getSymbol(head->simbol));
+        //     head = head -> prev;
+        // }
+        // printf(" <= %d\n", decks[0]->head->val);
+        // printf("\n");
+
         fgets(buffer, 50, stdin);
         command = strtok(buffer, " \n");
     }

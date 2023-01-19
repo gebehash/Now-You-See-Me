@@ -89,10 +89,11 @@ void shuffleDeck(Deck* pachet) {
     
     pachet->head = mid;
     pachet->tail = mid->prev;
+    mid->prev->next = 0;
     mid->prev = 0;
     last->next = first;
-    first->prev = mid;
-    first->next = 0;
+    first->prev = last;
+    pachet->tail->next = 0;
 }
 
 Deck* mergeDecks(Deck* deck1, Deck* deck2) {
